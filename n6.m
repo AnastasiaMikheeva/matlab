@@ -1,0 +1,10 @@
+r=-2*pi:0.01:2*pi;
+x1=(-3:0.02:3)';
+x=r.*cos(x1);
+y=r.*sin(x1);
+z=(r.^2).*ones(size(x1));
+figure
+mesh(x,y,z);
+xlabel('x');
+ylabel('y');
+zlabel('z');
